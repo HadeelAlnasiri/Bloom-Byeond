@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css\css-H-F.css">
+	<style >
+	.column { 
+		width: 260px;
+	 }
+	 .table { 
+	 margin-left:30px ;
+	 margin-top: 20px;
+
+	  }
+	  /* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+    border-radius: 20px;
+
+
+}
+
+.column img:hover {
+  border: 2px solid  #F2AA9B;
+  opacity: 1;
+  box-shadow: 5px 5px 5px  #F2AA9B;
+      transform: scale(0.9);
+
+
+}
+
+.expandedImg {
+    border: 2px solid  #F2AA9B;
+      border-radius: 20px;
+        box-shadow: 5px 2px 5px  #F2AA9B;
+
+
+
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  display: none;
+}
+	</style>
+
+	</head>
+	<body >
+		<header >
+			<h2 class="logo"> <a href="Home.html"> <img src="image\logo.png"  width="300px" style="margin-top: -10px; margin-left: -40px;"></a></h2> 
+		<div class="divs">
+
+				<a href="Home.html"> Home </a>
+
+                <div class="dropdown">
+				 <a href="about.html"> About Us </a>
+				  <div class="dropdown-content">
+				    <a href="about.html">who are we? </a>
+				    <a href="about.html">Contact us</a>
+				    <a href="ProjectRateUs.html">Rate Us</a>
+				  </div>
+				</div>
+				
+
+					  <div class="dropdown">
+		         <a href="shop.html"> Shop </a>
+		          <div class="dropdown-content">
+		            <a href="shop.html">Product categories</a>
+		            <a href="cart.html"> Shopping cart </a>
+		          </div>
+		        </div>
+
+				<div class="dropdown">
+				 <a href="Services.html"> Services </a>
+				  <div class="dropdown-content">
+				    <a href="WeddingandEvent.html">Wedding and events</a>
+				    <a href="Custom.html">Custom orders</a>
+				  </div>
+				</div>
+				
+				<div class="dropdown">
+				 <a href="pro.html"> Blog </a>
+				  <div class="dropdown-content">
+				    <a href="Tips.html">Tips and advice</a>
+				    <a href="article.html">Articles</a>
+				    <a href="Design ideas.html">design ideas</a>
+				    <a href="galllory.html">Gallery Photos</a>
+				  </div>
+				</div>
+			</div>
+		</header>
+
+     
+       
+                     
+                  <img class="image1" src="image\IMGTWO (18).png" />
+
+			<div style="text-align:center; margin-top: 180px; margin-top: -600px;">
+			  <h2 style="font-size: 60px; color: #F2AA9B;">Image Gallery </h2>
+			  <p style="color: white; margin-top: 5px;">Click on the images </p>
+			</div>
+			                                 
+			<table class="table">
+			  <thead class="table-head">
+			    <tr class="rowtable">
+			   
+
+
+
+			<!-- The four columns -->
+			<div class="row" >
+
+			  <td class="cell">
+			  <div class="column" >
+			   <img src="image\gllory (2).png" style=" width:250px; " onclick="myFunction(this);" > 
+			  </div> 
+			  </td>
+
+			  <td class="cell">
+			  <div class="column">
+			    <img src= "image\gllory.png"  style="width:250px;" onclick="myFunction(this);">
+			  </div>
+			 </td>
+
+			   <td class="cell">
+			  <div class="column">
+			   <img src="image\gllory (1).png"  style="width:250px" onclick="myFunction(this);">
+			  </div>
+			   </td>
+
+			  <td class="cell">
+			  <div class="column">
+			     <img src="image\gllory (3).png" style="width:250px" onclick="myFunction(this);">
+			  </div>
+			  </td>
+
+			    <td class="cell">
+			  <div class="column">
+			     <img src="image\gllory (4).png" style="width:250px" onclick="myFunction(this);">
+			  </div>
+			  </td>
+
+			</div>
+
+		 </tr>
+	    </thead>
+	</table>
+
+			<div class="container">
+			  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			  <img class="expandedImg"  id="expandedImg" style="width:50%; margin-left: 350px; margin-top: 30px;">
+			</div>
+
+			<script>
+
+			function myFunction(imgs) {
+			  var expandImg = document.getElementById("expandedImg");
+			  expandImg.src = imgs.src;
+			  expandImg.parentElement.style.display = "block";
+			}
+			    </script>
+			                             <br><br><br><br> <br>           
+
+           	  <h3 style="margin-left: 5px; margin-top: -15px;"> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+
+					<footer class="footer">
+         <h3 class="h" > © Copyright 2023 Bloom&Beyond - All Rights Reserved</h3>
+					</footer>
+					
+				</body>
+
+				</html>
